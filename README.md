@@ -1,6 +1,4 @@
-# Master OWASP Web Application SEcurity
-
-OWASP
+# Master OWASP Web Application Security
 
 SKF Security Knowledge Framework - open source web project to understand security
 ZAP Sed Attack Proxy - penetration testing tool
@@ -13,64 +11,70 @@ OWASP - Top 10
 
 ## A1 - Injection
   
-  - Injection attacks occur when an attacker is able to inject malicious code into an applications data input
-    - SQL injection
-    - OS commands
-    - LDAP queries
-    - Impact of Injection
-        - Steal of manipulate data
-        - Gain unauthorised attack
-        - Disrupt the application’s normal operation
-    - Prevention and Mitigation
-        - Input validation
-        - Prepared statements
-        - Parameterized queries
+- Injection attacks occur when an attacker is able to inject malicious code into an applications data input
+  - SQL injection
+  - OS commands
+  - LDAP queries  
+- Impact of Injection
+  - Steal of manipulate data
+  - Gain unauthorised attack
+  - Disrupt the application’s normal operation
+- Prevention and Mitigation
+  - Input validation
+  - Prepared statements
+  - Parameterized queries
+
 ## A2 : Broken Authentication
 
 - Authentication is the process of verifying the identity of the user, ensure that they are who they claim to be
-    - Common Authentication Flaws
-        - Weak passwords - brute force attacks 
-        - Insufficient session management - hijack valid sessions
-        - Issues with password recovery - weak password recovery allows hackers to 
-    - Impact of Broken authentication
-        - Unauthorised access
-        - Data exposure
-        - Identity theft
-    - Prevention and Mitigation
-        - Strong password policies
-        - Secure session mangement practices
-        - Robust password recovery mechanisms
+- Common Authentication Flaws
+  - Weak passwords - brute force attacks 
+  - Insufficient session management - hijack valid sessions
+  - Issues with password recovery - weak password recovery allows hackers to 
+- Impact of Broken authentication
+  - Unauthorised access
+  - Data exposure
+  - Identity theft
+- Prevention and Mitigation
+  - Strong password policies
+  - Secure session mangement practices
+  - Robust password recovery mechanisms
 
 ## A3 : Sensitive Data Exposure
-  - User credentials, financial data, health care records
-    - Sensitive data is at the core of many web applications and its a primary target for attackers
-    - Common Data Exposure Scenarios
-        - Inadequate data encryption
-        - Insufficient access controls
-        - Flawed authentication and session management
-    - Impact of Data Exposure
-        - Financial losses
-        - Reputation damage
-        - Legal ramifications
-        - Loss of trust
-    - Prevention and Mitigation
-        - Robust data encryption
-        - Access control mechanisms
-        - Secure authentication and session management
+
+- User credentials, financial data, health care records
+- Sensitive data is at the core of many web applications and its a primary target for attackers
+- Common Data Exposure Scenarios
+  - Inadequate data encryption
+  - Insufficient access controls
+  - Flawed authentication and session management
+- Impact of Data Exposure
+  - Financial losses
+  - Reputation damage
+  - Legal ramifications
+  - Loss of trust
+- Prevention and Mitigation
+  - Robust data encryption
+  - Access control mechanisms
+  - Secure authentication and session management
+
 ## A4 : XML External Entities (XXE)
-  - XML is used for data storage and transfer, can lead to vulnerabilities
-    - XXE occurs when attacker influence the procession of XML documents by including external entities
-    - Impact of XXE
-        - Access to sensitive files
-        - Disrupt the applications functionality
-        - Execute arbitrary code
-        - Application processes user-provided XML without proper validation, it can be manipulated to execute XXE attacks
-    - Prevention and Mitigation
-        - Disable external entity references
-        - Validate input
-        - Use secure XML parsers
+
+- XML is used for data storage and transfer, can lead to vulnerabilities
+- XXE occurs when attacker influence the procession of XML documents by including external entities
+- Impact of XXE
+  - Access to sensitive files
+  - Disrupt the applications functionality
+  - Execute arbitrary code
+  - Application processes user-provided XML without proper validation, it can be manipulated to execute XXE attacks
+- Prevention and Mitigation
+  - Disable external entity references
+  - Validate input
+  - Use secure XML parsers
+
 ## A5 : Broken Access Control
-  - Role of access control : Defines who can access what parts of an application
+
+- Role of access control : Defines who can access what parts of an application
     - Occurs when developers do not properly enforce access restrictions
     - Impact of Broken Access Control
         - Unauthorised access
